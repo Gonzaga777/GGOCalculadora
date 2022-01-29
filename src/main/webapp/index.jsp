@@ -8,20 +8,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div class="border border-secondary col-10" style="margin-left: 75px">
-<div class="container col-8">
+
+<div class="container col-6 border-secondary"style="background-color:orange; margin-top:100px;">
 <form method="post" action="Calculadora">
-    <b>Calculadora</b>
+    <h1 style="margin-left:143px;">Calculadora</h1>
 	<div class="mb-4 col-4">
-	Primeiro Valor
-	<input type="text" name="val1" class="form-control">
+	<b >Primeiro Valor</b>
+	<input style="width: 417px;" type="number" name="val1" class="form-control">
 	</div>
 	
 	<div class="mb-4 col-4">
-	Segundo Valor
-	<input type="text" name="val2" id="valor1" class="form-control">
+	<b >Segundo Valor</b>
+	<input style="width: 417px;" type="number" name="val2" id="valor1" class="form-control">
 	</div>
 	
+	 
 	<button type="reset" class="btn btn-secondary">Limpar</button>
 	<button type="submit" name="Somar" name="Somar"class="btn btn-secondary">Somar</button>
 	<button type="submit" name="Multiplicar" name="Multiplicar" class="btn btn-secondary">Multiplicar</button>
@@ -31,7 +32,7 @@
 	
 	</form>
 	
-Resultado = ${requestScope.res } <p>
+<div class="row bg-success"style="margin-top:29px"><h2 style="color:white;">Resultado = ${requestScope.res }</h2></div>
 
 </div> 
 </div>
